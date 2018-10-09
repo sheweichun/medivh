@@ -24,8 +24,8 @@ module.exports = {
   getDest() {
     return `build/${pkgName}`;
   },
-  getEntry(flag) {
-    const suffix = flag ? '.min' : '';
+  getEntry(flag, prefix = '') {
+    const suffix = prefix + (flag ? '.min' : '');
     return {
       [`${pkgName}${suffix}`]: path.resolve(__dirname, `../packages/${pkgName}/src/index.js`),
     };

@@ -9,6 +9,6 @@ for i in $pkgs
     do
         rm -rf packages/$i/dist
         export TO_BUILD_PACKAGE_NAME=$i
-        wgather build -e src -c config/gather.conf.dev.js,config/gather.conf.prod.js -d
+        wgather build -e src -c config/gather.conf.dev.js,config/gather.conf.prod.js,config/gather.conf.dev.jsonp.js,config/gather.conf.prod.jsonp.js -d
         cp -r build/$i packages/$i/dist
 done
