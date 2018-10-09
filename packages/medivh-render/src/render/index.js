@@ -112,12 +112,14 @@ export default function(option) {
       const _this = this;
       try {
         const {worker, el, bundleJs, cssEls, cssUrls, query, hash} = workerItem;
-        workerItem.destroy = function() {
-          if (vdomRender && vdomRender.unmountComponentAtNode) {
-            vdomRender.unmountComponentAtNode(el);
-            el.innerHTML = '';
+        workerItem.destroy = function(clear) {
+          if (clear) {
+            if (vdomRender && vdomRender.unmountComponentAtNode) {
+              vdomRender.unmountComponentAtNode(el);
+              el.innerHTML = '';
+            }
+            removeCssEls(cssEls);
           }
-          removeCssEls(cssEls);
           worker.terminate();
           _this.removeWorker(this);
         };
