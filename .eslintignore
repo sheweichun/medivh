@@ -1,0 +1,12 @@
+# 忽略目录
+dist/
+lib/
+coverage/
+build/
+node_modules/
+example/
+# 忽略文件
+**/*.min.js
+**/*-min.js
+gather.conf.js
+

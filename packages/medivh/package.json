@@ -1,0 +1,21 @@
+{
+  "name": "medivh",
+  "version": "0.0.0",
+  "description": "medivh library",
+  "author": "weichun.swc@alibaba-inc.com",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib"
+  },
+  "dependencies": {
+    "invariant": "^2.2.4",
+    "medivh-common": "^0.0.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}

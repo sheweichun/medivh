@@ -1,0 +1,14 @@
+{
+  "name": "medivh-common",
+  "version": "0.0.0",
+  "description": "common library",
+  "main": "lib/index.js",
+  "author": "weichun.swc@alibaba-inc.com",
+  "scripts": {
+    "build": "babel src --out-dir lib"
+  },
+  "dependencies": {
+    "invariant": "^2.2.4",
+    "pako": "^1.0.6"
+  }
+}

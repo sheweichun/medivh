@@ -1,0 +1,17 @@
+{
+  "name": "medivh-redux",
+  "version": "0.0.0",
+  "description": "medivh-redux library",
+  "author": "weichun.swc@alibaba-inc.com",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib"
+  },
+  "dependencies": {
+    "invariant": "^2.2.4",
+    "redux": "^4.0.0"
+  },
+  "peerDependencies":{
+    "medivh": "^0.0.0"
+  }
+}

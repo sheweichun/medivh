@@ -1,0 +1,42 @@
+{
+  "scripts": {
+    "lint": "eslint ./examples --fix",
+    "build": "./build.sh"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "moment": "^2.22.2",
+    "rax": "^0.6.4",
+    "rax-dom": "^0.6.4",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-worker": "^1.0.0",
+    "redux": "^4.0.0",
+    "style-unit": "^0.6.4"
+  },
+  "devDependencies": {
+    "@ali/eslint-config-tbfed": "^0.6.10",
+    "@ali/eslint-plugin-tbfed": "^1.1.7",
+    "@alife/next": "^1.6.4",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-plugin-next": "^0.0.4",
+    "babel-plugin-react-css-modules": "^3.4.2",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^3.19.0",
+    "lerna": "^2.5.1",
+    "postcss-less": "^2.0.0",
+    "reqwest": "^2.0.5"
+  }
+}

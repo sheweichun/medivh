@@ -1,0 +1,14 @@
+{
+  "name": "medivh-runtime",
+  "version": "0.0.0",
+  "description": "medivh-runtime library",
+  "author": "weichun.swc@alibaba-inc.com",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib"
+  },
+  "dependencies": {
+    "invariant": "^2.2.4",
+    "medivh-common": "^0.0.0"
+  }
+}

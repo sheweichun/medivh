@@ -1,0 +1,21 @@
+{
+  "name": "medivh-router",
+  "version": "0.0.0",
+  "description": "medivh-router library",
+  "author": "weichun.swc@alibaba-inc.com",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib"
+  },
+  "dependencies": {
+    "invariant": "^2.2.4",
+    "path-to-regexp": "^2.2.1",
+    "resolve-pathname": "^2.2.0",
+    "value-equal": "^0.4.0",
+    "warning": "^4.0.1"
+  },
+  "peerDependencies":{
+    "medivh": "^0.0.0",
+    "medivh-common": "^0.0.0"
+  }
+}
