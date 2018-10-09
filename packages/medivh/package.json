@@ -1,6 +1,6 @@
 {
   "name": "medivh",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "medivh library",
   "author": "weichun.swc@alibaba-inc.com",
   "main": "./lib/index.js",
@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "invariant": "^2.2.4",
-    "medivh-common": "^0.0.0"
+    "medivh-common": "^0.0.1"
   },
   "devDependencies": {
     "babel-plugin-transform-decorators-legacy": "^1.3.5",
