@@ -550,12 +550,14 @@ function generateFunProxy(worker) {
             query = workerItem.query,
             hash = workerItem.hash;
 
-        workerItem.destroy = function () {
-          if (vdomRender && vdomRender.unmountComponentAtNode) {
-            vdomRender.unmountComponentAtNode(el);
-            el.innerHTML = '';
+        workerItem.destroy = function (clear) {
+          if (clear) {
+            if (vdomRender && vdomRender.unmountComponentAtNode) {
+              vdomRender.unmountComponentAtNode(el);
+              el.innerHTML = '';
+            }
+            Object(__WEBPACK_IMPORTED_MODULE_1__load_worker__["b" /* removeCssEls */])(cssEls);
           }
-          Object(__WEBPACK_IMPORTED_MODULE_1__load_worker__["b" /* removeCssEls */])(cssEls);
           worker.terminate();
           _this.removeWorker(this);
         };
