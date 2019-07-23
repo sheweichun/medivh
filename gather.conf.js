@@ -7,7 +7,7 @@ const branchName = matchList ? matchList[1] : '';
 module.exports = {
   packName: 'customeservice-worker',
   // packName:'webpack',
-  packScope: '@ali',
+  // packScope: '@ali',
   packOption: ({context}) => {
     
     return {

@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "start": "wgather dev",
     "lint": "eslint ./examples --fix",
     "build": "./build.sh"
   },
@@ -17,9 +18,6 @@
     "style-unit": "^0.6.4"
   },
   "devDependencies": {
-    "@ali/eslint-config-tbfed": "^0.6.10",
-    "@ali/eslint-plugin-tbfed": "^1.1.7",
-    "@alife/next": "^1.6.4",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
     "babel-plugin-module-resolver": "^3.1.1",
